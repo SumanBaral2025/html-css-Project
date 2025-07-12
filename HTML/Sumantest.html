@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<style type="text/css">
+		.semi{
+			background-color: red;
+			list-style-type: none;
+			padding-top:10px;
+			padding-bottom:10px;
+		}
+		#in,#nzl,#sa,#aus{
+			padding:10px;
+			margin-top:10px;
+		}
+		#in{
+			background-color: blue;
+		}
+		#nzl{
+			background-color: black;
+			color:#ffffff;
+		}
+		#sa{
+			background-color: green;
+			color:yellow;
+		}
+		#aus{
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<h1>Who Will Win the ICC Champions Trophy 2025??</h1>
+	<form onsubmit="check()">
+	<ol class="semi">
+		<li id="in"><input type="radio" name="country" id="ind"> India</li>
+		<li id="nzl"><input type="radio" name="country" id="new">Newzealand</li>
+		<li id="sa"><input type="radio" name="country" id="south">South Africa</li>
+		<li id="aus"><input type="radio" name="country" id="auss">Australia</li>
+	</ol>
+	<input type="submit" name="submit">
+	</form>
+	<script type="text/javascript">
+		function check()
+		{
+			var x=document.getElementById('ind').checked;
+			if (x==true) {
+				alert("You Won Rs.100000");
+			}else{
+				alert("You are Wrong");
+			}
+		}
+	</script>
+</body>
+</html>
